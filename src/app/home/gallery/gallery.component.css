@@ -1,1 +1,36 @@
-/*# sourceMappingURL=gallery.component.css.map */
+body {
+  background-color: rgb(241, 241, 241);
+}
+body .images {
+  position: relative;
+  display: inline-block;
+  font-family: "raleway", sans-serif;
+  overflow: hidden;
+}
+body .images img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: all 1s;
+}
+body .images h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 2px 2px 5px #1c1c1c;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  display: inline-block;
+}
+body h3 {
+  font-family: "raleway", sans-serif;
+  color: #1c1c1c;
+  font-weight: 600;
+}
+body img:hover {
+  transform: scale(1.5);
+  overflow: hidden;
+  cursor: pointer;
+}/*# sourceMappingURL=gallery.component.css.map */
