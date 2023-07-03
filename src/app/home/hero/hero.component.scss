@@ -1,1 +1,28 @@
 @import '../../variables';
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.background{
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    height: 50vh;
+    background-image: url("../../../assets/heroImage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    .background-text{
+        background-color: $background-primary-dark;
+        opacity: 50%;
+        color: $font-color-light;
+        text-align: center;
+        padding: 2%;
+        h1{
+            text-align: center;
+        }
+    }
+}
