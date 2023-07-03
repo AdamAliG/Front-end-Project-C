@@ -1,6 +1,7 @@
 @import '../../variables';
 .body{
-    background-color: $background-primary-light;
+    background-color: $background-primary-dark;
+    font-family: "Raleway", sans-serif;
 }
 .text-1{
     margin: 10px 20px 10px 20px;
@@ -8,7 +9,10 @@
     display: inline-block;
     align-items: center;
     justify-content: center;
-    color: $font-color-dark
+    color: $font-color-dark;
+    background-color: $background-primary-light;
+    
+
 }
 .text-2{
     margin: 10px 20px 10px 20px;
