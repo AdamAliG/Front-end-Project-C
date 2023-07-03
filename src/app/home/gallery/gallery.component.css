@@ -12,6 +12,7 @@ body .images img {
   height: auto;
   display: block;
   transition: all 1s;
+  border: 5px solid rgb(18, 18, 18);
 }
 body .images h1 {
   position: absolute;

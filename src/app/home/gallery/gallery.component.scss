@@ -8,6 +8,7 @@ body{
   display: inline-block;
   font-family: 'raleway', sans-serif;
   overflow: hidden;
+  
 }
 
 .images img {
@@ -15,6 +16,7 @@ body{
   height: auto;
   display: block;
   transition: all 1s;
+  border: 5px solid $background-primary-dark;
 }
 
 .images h1 {
