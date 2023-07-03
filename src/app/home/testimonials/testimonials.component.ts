@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class TestimonialsComponent {
 
   title = " Hi, I'am Colin .. "
-  para1 = " a profisional phtographer from England living and working in Vienna, Austria. ";
+  para1 = " a professional photographer from England living and working in Vienna, Austria. ";
 
   para21 = " Outdoor Photo Session" ;
   para21image = "./../../../assets/girl-1026246_1280.jpg";

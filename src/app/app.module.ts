@@ -10,6 +10,7 @@ import { HeroComponent } from './home/hero/hero.component';
 import { TestimonialsComponent } from './home/testimonials/testimonials.component';
 import { AboutMeComponent } from './home/about-me/about-me.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { GallerylineComponent } from './home/gallery/galleryline/galleryline.component';
 
 
 
@@ -23,6 +24,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     TestimonialsComponent,
     AboutMeComponent,
     NavbarComponent,
+    GallerylineComponent,
   ],
   imports: [
     BrowserModule,
