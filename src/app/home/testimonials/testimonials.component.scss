@@ -1,1 +1,84 @@
-@import '../../variables';
+@import "../../variables";
+
+section {
+  background-color: rgba($background-primary-dark, 0.95);
+  .cont {
+    width: 75%;
+    margin: auto;
+    padding: 3% 1%;
+    text-align: center;
+    background-color: rgba($background-primary-dark, 0.5);
+    h1 {
+      font-family: "Raleway", sans-serif;
+      font-size: 4rem;
+      font-weight: lighter;
+      color: $font-color-light;
+      margin-top: 5%;
+    }
+    .para1 {
+      font-family: "Roboto", sans-serif;
+      font-size: 1.3rem;
+      font-weight: lighter;
+      color: $font-color-light;
+      padding: 0.7% 8%;
+      text-transform: capitalize;
+      letter-spacing: 0.45rem;
+      border-bottom: 0.1px solid rgba($background-primary-light, 0.4);
+    }
+    .div1 {
+      margin: auto;
+      padding-top: 1%;
+      width: 90%;
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      gap: 2%;
+      div {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        .titles {
+          width: 90%;
+          margin: 3% auto;
+          font-family: "Roboto", sans-serif;
+          font-size: 1.1rem;
+          font-weight: lighter;
+          color: rgba($font-color-light, 0.9);
+          padding: 0.7% 5%;
+          letter-spacing: 0.1rem;
+          text-align: left;
+          box-shadow: 0px 0px 10px rgba($background-primary-light, 0.4);
+          border-radius: 10px;
+        }
+        img {
+          width: 100%;
+          height: 80%;
+          object-fit: cover;
+          object-position: center;
+          box-shadow: 2px 2px 6px rgba($background-primary-light, 0.4);
+          border-top-left-radius: 10%;
+          border-top-right-radius: 40%;
+          border-bottom-left-radius: 25%;
+          border-bottom-right-radius: 10%;
+        }
+        .mid {
+          width: 90%;
+          font-weight: lighter;
+          color: $font-color-light;
+          padding: 5%;
+          letter-spacing: 0.1rem;
+          font-family: "Raleway", sans-serif;
+          font-size: 1.2rem;
+          margin-bottom: 10%;
+        }
+        h2 {
+          font-family: "Raleway", sans-serif;
+          font-size: 2.5rem;
+          color: rgba($background-primary-light, 0.4);
+        }
+      }
+    }
+  }
+}

@@ -1,1 +1,21 @@
 @import '../../variables';
+.body{
+    background-color: $background-primary-light;
+}
+.text-1{
+    margin: 10px 20px 10px 20px;
+    font-size: 20px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    color: $font-color-dark
+}
+.text-2{
+    margin: 10px 20px 10px 20px;
+    font-size: 20px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    color: $font-color-dark
+
+}
