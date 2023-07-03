@@ -1,1 +1,43 @@
 @import '../../variables';
+body{
+
+  background-color: $background-primary-light;
+
+ .images {
+  position: relative;
+  display: inline-block;
+  font-family: 'raleway', sans-serif;
+  overflow: hidden;
+}
+
+.images img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: all 1s;
+}
+
+.images h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 2px 2px 5px $font-color-dark;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  display: inline-block
+}
+
+h3{
+  font-family: 'raleway', sans-serif;
+  color: $font-color-dark;
+  font-weight: 600;
+} 
+
+img:hover{
+  transform: scale(1.5);
+  overflow: hidden;
+  cursor: pointer;
+}
+}
