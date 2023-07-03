@@ -1,1 +1,21 @@
 @import '../variables';
+*{
+    background-color: $background-primary-dark;
+    color: $font-color-light;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+.navbar-brand{
+    margin: 10px;
+    color: $font-color-light;
+    text-align: center;
+    font-weight: bold;
+    a{
+        font-size: small;
+    }
+}
+.nav-link{
+    margin: 10px;
+    color: $font-color-light;
+}
