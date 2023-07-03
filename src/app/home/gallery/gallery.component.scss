@@ -3,6 +3,13 @@ body{
 
   background-color: $background-primary-light;
 
+    .heading{
+      font-family: 'raleways', sans-serif;
+      color: $background-primary-dark;
+      font-size: 5rem;
+      text-align: center;
+    }
+
  .images {
   position: relative;
   display: inline-block;
@@ -42,4 +49,21 @@ img:hover{
   overflow: hidden;
   cursor: pointer;
 }
+@media (max-width:768px){
+  .heading{
+    font-size: 3rem;
+  }
 }
+@media (max-width:500px){
+  .heading{
+    font-size: 2rem;
+  }
+}
+@media (max-width:375px){
+  .heading{
+    font-size: 1.8rem;
+  }
+}
+}
+
+
