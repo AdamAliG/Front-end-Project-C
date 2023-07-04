@@ -8,7 +8,6 @@ import { GalleryComponent } from './home/gallery/gallery.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeroComponent } from './home/hero/hero.component';
 import { TestimonialsComponent } from './home/testimonials/testimonials.component';
-import { AboutMeComponent } from './home/about-me/about-me.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
 
@@ -21,7 +20,6 @@ import { NavbarComponent } from './navbar/navbar.component';
     FooterComponent,
     HeroComponent,
     TestimonialsComponent,
-    AboutMeComponent,
     NavbarComponent,
   ],
   imports: [
