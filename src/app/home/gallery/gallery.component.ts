@@ -15,6 +15,7 @@ export class GalleryComponent {
     "../../../assets/gallery-images/weddings/wedding-3.jpg",
     "../../../assets/gallery-images/weddings/wedding-4.jpg",
     "../../../assets/gallery-images/weddings/wedding-5.jpeg",
+    "../../../assets/gallery-images/weddings/wedding-6.jpg",
   ]
 
   vacation = [
