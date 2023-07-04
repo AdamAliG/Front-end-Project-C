@@ -1,27 +1,27 @@
 @import '../variables';
 *{
-    background-color: rgba($background-primary-dark, 0.5);
     padding: 10px;
     margin: 0px;
     color: $font-color-light;
     font-family: 'Raleway', sans-serif;
 }
-.row{
-    background-color: rgba($background-primary-dark, 0);
+body{
+    background-color: rgba($background-primary-dark, 0.5);
 }
-h2{
-    background-color: rgba($background-primary-dark, 0);
-}
-.mb-3{
-    background-color: rgba($background-primary-dark, 0);
-    label{
-        padding: 0px;
+.container{
+    form{
         background-color: rgba($background-primary-dark, 0);
-    }
-    input{
-        padding: 5px;
-    }
-    p{
-        background-color: rgba($background-primary-dark, 0);
+        label{
+            padding: 0px;
+        }
+        input{
+            padding: 5px;
+            background-color: rgba($background-primary-dark, 0.5);
+            color: $font-color-light;
+        }
+        textarea{
+            background-color: rgba($background-primary-dark, 0.5);
+            color: $font-color-light;
+        }
     }
 }
