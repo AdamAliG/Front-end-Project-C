@@ -1,0 +1,10 @@
+@import '../variables';
+*{
+    background-color: rgba($background-primary-dark, 0.5);
+    padding: 0px;
+    margin: 0px;
+    color: $font-color-light;
+}
+label{
+    background-color: rgba($background-primary-dark, 0);
+}
