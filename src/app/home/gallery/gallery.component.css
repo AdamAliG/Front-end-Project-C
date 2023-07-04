@@ -1,26 +1,37 @@
-body {
-  background-color: rgb(241, 241, 241);
+* {
+  padding: 0;
+  box-sizing: border-box;
 }
-body .heading {
+
+section {
+  background-color: rgb(241, 241, 241);
+  position: relative;
+}
+section .heading {
   font-family: "raleways", sans-serif;
   color: rgb(18, 18, 18);
   font-size: 5rem;
   text-align: center;
 }
-body .images {
+section div .images {
   position: relative;
   display: inline-block;
   font-family: "raleway", sans-serif;
   overflow: hidden;
 }
-body .images img {
+section div .images img {
   width: 100%;
   height: auto;
   display: block;
   transition: all 1s;
   border: 3px solid rgb(18, 18, 18);
 }
-body .images h1 {
+section div .images img:hover {
+  transform: scale(1.5);
+  overflow: hidden;
+  cursor: pointer;
+}
+section div .images h1 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -31,28 +42,57 @@ body .images h1 {
   padding: 10px;
   display: inline-block;
 }
-body h3 {
+section .btn {
+  padding: 15px;
+}
+section h3 {
   font-family: "raleway", sans-serif;
   color: #1c1c1c;
   font-weight: 600;
 }
-body img:hover {
-  transform: scale(1.5);
-  overflow: hidden;
-  cursor: pointer;
+section .madalLayer {
+  position: absolute;
+  width: 96vw;
+  height: 96vh;
+  background-color: rgba(18, 18, 18, 0.7);
+  border-radius: 3px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1%;
+  padding: 3%;
+}
+section .madalLayer .portoGallery {
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+  background-color: rgba(241, 241, 241, 0.75);
+  border-radius: 3px;
+  margin: auto;
+}
+section .madalLayer .portoGallery .portoImg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 3px;
 }
 @media (max-width: 768px) {
-  body .heading {
+  section .heading {
     font-size: 3rem;
   }
 }
 @media (max-width: 500px) {
-  body .heading {
+  section .heading {
     font-size: 2rem;
   }
 }
 @media (max-width: 375px) {
-  body .heading {
+  section .heading {
     font-size: 1.8rem;
   }
 }/*# sourceMappingURL=gallery.component.css.map */
