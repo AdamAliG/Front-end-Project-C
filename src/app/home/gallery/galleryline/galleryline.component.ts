@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,  } from '@angular/core';
 
 @Component({
   selector: 'app-galleryline',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./galleryline.component.scss']
 })
 export class GallerylineComponent {
-
+  
 }
