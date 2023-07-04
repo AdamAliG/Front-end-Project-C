@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-body {
+section {
   background-color: $background-primary-light;
   position: relative;
   .heading {
@@ -13,32 +13,36 @@ body {
     font-size: 5rem;
     text-align: center;
   }
-
-  .images {
-    position: relative;
-    display: inline-block;
-    font-family: "raleway", sans-serif;
-    overflow: hidden;
-  }
-
-  .images img {
-    width: 100%;
-    height: auto;
-    display: block;
-    transition: all 1s;
-    border: 3px solid $background-primary-dark;
-  }
-
-  .images h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-shadow: 2px 2px 5px $font-color-dark;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 10px;
-    display: inline-block;
+  div {
+    .images {
+      position: relative;
+      display: inline-block;
+      font-family: "raleway", sans-serif;
+      overflow: hidden;
+    }
+    .images img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: all 1s;
+      border: 3px solid $background-primary-dark;
+      &:hover {
+        transform: scale(1.5);
+        overflow: hidden;
+        cursor: pointer;
+      }
+    }
+    .images h1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-shadow: 2px 2px 5px $font-color-dark;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.5);
+      padding: 10px;
+      display: inline-block;
+    }
   }
 
   .btn {
@@ -51,28 +55,34 @@ body {
     font-weight: 600;
   }
 
-  img:hover {
-    transform: scale(1.5);
-    overflow: hidden;
-    cursor: pointer;
-  }
   .madalLayer {
+    position: absolute;
     width: 96vw;
     height: 96vh;
-    margin: auto;
     background-color: rgba($background-primary-dark, 0.7);
-    position: absolute;
-    top: 2%;
-    left: 2%;
+    border-radius: 3px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1%;
+    padding: 3%;
     .portoGallery {
-      width: 90%;
-      height: 90%;
+      width: 100%;
+      height: 100%;
+      padding: 5%;
       background-color: rgba($background-primary-light, 0.75);
+      border-radius: 3px;
       margin: auto;
+      .portoImg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 3px;
+      }
     }
   }
   @media (max-width: 768px) {

@@ -9,9 +9,10 @@
   height: fit-content;
   padding: 20px 0px 5px 0px;
   background-color: rgb(18, 18, 18);
-  position: fixed;
+  position: absolute;
   margin-bottom: 0px;
   width: 100%;
+  font-family: "Raleway", sans-serif;
 }
 
 .social-links {
