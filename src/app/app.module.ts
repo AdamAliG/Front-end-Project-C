@@ -10,9 +10,6 @@ import { HeroComponent } from './home/hero/hero.component';
 import { TestimonialsComponent } from './home/testimonials/testimonials.component';
 import { AboutMeComponent } from './home/about-me/about-me.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { GallerylineComponent } from './home/gallery/galleryline/galleryline.component';
-import { ContactMeComponent } from './contact-me/contact-me.component';
-import { PortfolioComponent } from './portfolio/portfolio.component';
 
 
 
@@ -26,9 +23,6 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     TestimonialsComponent,
     AboutMeComponent,
     NavbarComponent,
-    GallerylineComponent,
-    ContactMeComponent,
-    PortfolioComponent,
   ],
   imports: [
     BrowserModule,

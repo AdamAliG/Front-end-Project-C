@@ -1,47 +1,49 @@
 section {
   background-color: rgba(18, 18, 18, 0.95);
 }
-section .cont {
+section .testCont {
   width: 75%;
   margin: auto;
   padding: 3% 1%;
   text-align: center;
   background-color: rgba(18, 18, 18, 0.5);
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
-section .cont h1 {
+section .testCont h1 {
   font-family: "Raleway", sans-serif;
   font-size: 4rem;
   font-weight: lighter;
-  color: #E6E6E6;
-  margin-top: 5%;
+  color: #e6e6e6;
 }
-section .cont .para1 {
+section .testCont .para1 {
   font-family: "Roboto", sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: lighter;
-  color: #E6E6E6;
+  color: #e6e6e6;
   padding: 0.7% 8%;
   text-transform: capitalize;
   letter-spacing: 0.45rem;
   border-bottom: 0.1px solid rgba(241, 241, 241, 0.4);
 }
-section .cont .div1 {
-  margin: auto;
-  padding-top: 1%;
+section .testCont .div1 {
+  margin: 1% auto;
   width: 90%;
+  height: 100%;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-  gap: 2%;
+  gap: 1%;
 }
-section .cont .div1 div {
+section .testCont .div1 div {
   width: 100%;
-  height: 100%;
+  height: 90%;
+  padding: 1% 2%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
 }
-section .cont .div1 div .titles {
+section .testCont .div1 div .titles {
   width: 90%;
   margin: 3% auto;
   font-family: "Roboto", sans-serif;
@@ -54,7 +56,7 @@ section .cont .div1 div .titles {
   box-shadow: 0px 0px 10px rgba(241, 241, 241, 0.4);
   border-radius: 10px;
 }
-section .cont .div1 div img {
+section .testCont .div1 div img {
   width: 100%;
   height: 80%;
   -o-object-fit: cover;
@@ -67,17 +69,17 @@ section .cont .div1 div img {
   border-bottom-left-radius: 25%;
   border-bottom-right-radius: 10%;
 }
-section .cont .div1 div .mid {
+section .testCont .div1 div .mid {
   width: 90%;
   font-weight: lighter;
-  color: #E6E6E6;
+  color: #e6e6e6;
   padding: 5%;
   letter-spacing: 0.1rem;
   font-family: "Raleway", sans-serif;
   font-size: 1.2rem;
   margin-bottom: 10%;
 }
-section .cont .div1 div h2 {
+section .testCont .div1 div h2 {
   font-family: "Raleway", sans-serif;
   font-size: 2.5rem;
   color: rgba(241, 241, 241, 0.4);
