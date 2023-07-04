@@ -11,6 +11,8 @@ import { TestimonialsComponent } from './home/testimonials/testimonials.componen
 import { AboutMeComponent } from './home/about-me/about-me.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { GallerylineComponent } from './home/gallery/galleryline/galleryline.component';
+import { ContactMeComponent } from './contact-me/contact-me.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 
 
@@ -25,6 +27,8 @@ import { GallerylineComponent } from './home/gallery/galleryline/galleryline.com
     AboutMeComponent,
     NavbarComponent,
     GallerylineComponent,
+    ContactMeComponent,
+    PortfolioComponent,
   ],
   imports: [
     BrowserModule,
