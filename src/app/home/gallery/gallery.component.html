@@ -64,9 +64,11 @@
 
 
 <div class="madalLayer" [style.display]="showModal ? 'grid' : 'none'" id="modal" (click)="toggleModal(null)">
+  <div class="closeX"> <button>X</button></div>
   <ng-container *ngIf="selectedCategory === 'wedding'">
-      <div class="portoGallery" *ngFor="let pic of wedding">
-          <img class="portoImg" src="{{pic}}" alt="">
+      <div class="portoGallery" *ngFor="let pic of wedding; let i = index">
+          <img class="portoImg" src="{{pic}}" alt="" type="button" (click)="openImage()">
+          <span> the image name is {{wedding[i]}} </span>
       </div>
   </ng-container>
   <ng-container *ngIf="selectedCategory === 'vacation'">
@@ -109,5 +111,9 @@
         <img class="portoImg" src="{{pic}}" alt="">
     </div>
   </ng-container>
+
 </div>
+
 </section>
+
+

@@ -85,5 +85,33 @@ section {
   }
 }
 
-@media screen and (max-width: 480px) {
+
+@media screen and (max-width: 576px) {
+  section {
+    .testCont {
+      width: 95%;
+      h1 {
+        font-size: 2.5rem;
+      }
+      .para1 {
+        font-size: 0.8rem;
+      }
+      .div1 {
+        grid-template-columns: 1fr;
+        div {
+          height: 60%;
+          img {
+            width: 85%;
+            height: 80%;
+          }
+          .mid {
+            width: 90%;
+            padding: 2% 5%;
+            margin-bottom: 3%;
+          }
+        }
+      }
+    }
+  }
 }
+

@@ -83,4 +83,31 @@ section .testCont .div1 div h2 {
   font-family: "Raleway", sans-serif;
   font-size: 2.5rem;
   color: rgba(241, 241, 241, 0.4);
+}
+
+@media screen and (max-width: 576px) {
+  section .testCont {
+    width: 95%;
+  }
+  section .testCont h1 {
+    font-size: 2.5rem;
+  }
+  section .testCont .para1 {
+    font-size: 0.8rem;
+  }
+  section .testCont .div1 {
+    grid-template-columns: 1fr;
+  }
+  section .testCont .div1 div {
+    height: 60%;
+  }
+  section .testCont .div1 div img {
+    width: 85%;
+    height: 80%;
+  }
+  section .testCont .div1 div .mid {
+    width: 90%;
+    padding: 2% 5%;
+    margin-bottom: 3%;
+  }
 }/*# sourceMappingURL=testimonials.component.css.map */

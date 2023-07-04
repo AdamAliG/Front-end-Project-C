@@ -92,14 +92,16 @@ export class GalleryComponent {
     "../../../assets/gallery-images/workshop/workshop-6.jpg",
   ]
 
-
   showModal = false;
+  openImg = false;
 
   toggleModal(category: string | null) {
     this.showModal = !this.showModal;
     this.selectedCategory = category;
   }
 
-
+  openImage () {
+    this.openImg = !this.openImg;
+  }
 
 }
