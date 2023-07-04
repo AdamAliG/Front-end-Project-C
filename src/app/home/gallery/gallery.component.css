@@ -1,6 +1,12 @@
 body {
   background-color: rgb(241, 241, 241);
 }
+body .heading {
+  font-family: "raleways", sans-serif;
+  color: rgb(18, 18, 18);
+  font-size: 5rem;
+  text-align: center;
+}
 body .images {
   position: relative;
   display: inline-block;
@@ -34,4 +40,19 @@ body img:hover {
   transform: scale(1.5);
   overflow: hidden;
   cursor: pointer;
+}
+@media (max-width: 768px) {
+  body .heading {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  body .heading {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 375px) {
+  body .heading {
+    font-size: 1.8rem;
+  }
 }/*# sourceMappingURL=gallery.component.css.map */
