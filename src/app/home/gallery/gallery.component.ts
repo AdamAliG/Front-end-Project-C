@@ -6,7 +6,7 @@ import { Component} from '@angular/core';
   styleUrls: ['./gallery.component.scss']
 })
 export class GalleryComponent {
-
+  selectedCategory: string | null = null;
   imageCat = ["wedding", "vacation", "fineArt", "maternity", "headshot", "portrait", "boldoir", "poledance", "workshop"]
 
   wedding = [
@@ -83,10 +83,16 @@ export class GalleryComponent {
       workshop: "../../../assets/gallery-images/workshop/workshop-5.jpg"
     },
   ]
+  
+
 
   showModal = false;
 
-  toggleModal() {
+  toggleModal(category: string | null) {
     this.showModal = !this.showModal;
+    this.selectedCategory = category;
   }
+  
+
+  
 }

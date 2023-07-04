@@ -4,12 +4,12 @@
   <h1 class="heading text-center p-5">PHOTOSHOOTS</h1>
   <!--first row-->
   <div class="row g-2" >
-    <div class="images col-sm-12 col-md-6 col-xxl-4 col-xl-4 p-2" (click)="toggleModal()">
-      <img src="./assets/gallery-images/wedding.jpeg" class="img-fluid" alt="wedding.jpeg">
+    <div class="images col-sm-12 col-md-6 col-xxl-4 col-xl-4 p-2">
+      <img src="./assets/gallery-images/wedding.jpeg" class="img-fluid" alt="wedding.jpeg" (click)="toggleModal('wedding')">
       <h1>WEDDING</h1>
     </div>
-    <div class="images col-sm-12 col-md-6 col-xxl-4 col-xl-4 p-2" (click)="toggleModal()">
-      <img src="./assets/gallery-images/vacations.jpg" class="img-fluid" alt="vacations.jpg">
+    <div class="images col-sm-12 col-md-6 col-xxl-4 col-xl-4 p-2">
+      <img src="./assets/gallery-images/vacations.jpg" class="img-fluid" alt="vacations.jpg" (click)="toggleModal('vacation')">
       <h1>VACATION</h1>
     </div>
     <div class="images col-sm-12 col-md-6 col-xxl-4 col-xl-4 p-2">
@@ -61,16 +61,18 @@
   </a>
 </div>
 
-<div class="madalLayer" [style.display]="showModal ? 'grid' : 'none'" id="modal" (click)="toggleModal()" [ngSwitch]="imageCat" >
-    <div class="portoGallery" *ngFor="let pic of wedding" ng-Switch-when="'wedding'" >
-      <img class="portoImg" src="{{pic}}" alt="">
-    </div>
-  <div class="portoGallery" *ngFor="let pic of vacation" ng-Switch-when="'vacation'">
-    <div class="portoGallery">
-      <img class="portoImg" src="{{pic}}" alt="">
-    </div>
-  </div>
+
+
+<div class="madalLayer" [style.display]="showModal ? 'grid' : 'none'" id="modal" (click)="toggleModal(null)">
+  <ng-container *ngIf="selectedCategory === 'wedding'">
+      <div class="portoGallery" *ngFor="let pic of wedding">
+          <img class="portoImg" src="{{pic}}" alt="">
+      </div>
+  </ng-container>
+  <ng-container *ngIf="selectedCategory === 'vacation'">
+      <div class="portoGallery" *ngFor="let pic of vacation">
+          <img class="portoImg" src="{{pic}}" alt="">
+      </div>
+  </ng-container>
 </div>
 </section>
-
-
