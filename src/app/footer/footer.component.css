@@ -43,12 +43,19 @@
   line-height: 1.6;
   text-align: center;
   margin: 10px;
+  
 }
 .quick-links li {
   display: inline-block;
   padding: 0 25px;
   color: #e6e6e6;
+  text-decoration: none;
 }
+.my-links{
+  text-decoration: none;
+}
+
+
 .quick-links li:hover {
   opacity: 0.75;
   cursor: pointer;

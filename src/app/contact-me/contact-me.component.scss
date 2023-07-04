@@ -1,10 +1,27 @@
 @import '../variables';
 *{
     background-color: rgba($background-primary-dark, 0.5);
-    padding: 0px;
+    padding: 10px;
     margin: 0px;
     color: $font-color-light;
+    font-family: 'Raleway', sans-serif;
 }
-label{
+.row{
     background-color: rgba($background-primary-dark, 0);
+}
+h2{
+    background-color: rgba($background-primary-dark, 0);
+}
+.mb-3{
+    background-color: rgba($background-primary-dark, 0);
+    label{
+        padding: 0px;
+        background-color: rgba($background-primary-dark, 0);
+    }
+    input{
+        padding: 5px;
+    }
+    p{
+        background-color: rgba($background-primary-dark, 0);
+    }
 }
