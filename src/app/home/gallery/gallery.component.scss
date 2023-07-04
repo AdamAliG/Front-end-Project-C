@@ -1,81 +1,93 @@
-@import '../../variables';
- *{
+@import "../../variables";
+* {
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
-
+body {
   background-color: $background-primary-light;
-
-    .heading{
-      font-family: 'raleways', sans-serif;
-      color: $background-primary-dark;
-      font-size: 5rem;
-      text-align: center;
-    }
-
- .images {
   position: relative;
-  display: inline-block;
-  font-family: 'raleway', sans-serif;
-  overflow: hidden;
-  
-}
+  .heading {
+    font-family: "raleways", sans-serif;
+    color: $background-primary-dark;
+    font-size: 5rem;
+    text-align: center;
+  }
 
-.images img {
-  width: 100%;
-  height: auto;
-  display: block;
-  transition: all 1s;
-  border: 3px solid $background-primary-dark;
-}
+  .images {
+    position: relative;
+    display: inline-block;
+    font-family: "raleway", sans-serif;
+    overflow: hidden;
+  }
 
-.images h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-shadow: 2px 2px 5px $font-color-dark;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 10px;
-  display: inline-block
-}
+  .images img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: all 1s;
+    border: 3px solid $background-primary-dark;
+  }
 
-.btn{
-  padding:15px;
-}
+  .images h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 5px $font-color-dark;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    display: inline-block;
+  }
 
+  .btn {
+    padding: 15px;
+  }
 
+  h3 {
+    font-family: "raleway", sans-serif;
+    color: $font-color-dark;
+    font-weight: 600;
+  }
 
-h3{
-  font-family: 'raleway', sans-serif;
-  color: $font-color-dark;
-  font-weight: 600;
-} 
-
-img:hover{
-  transform: scale(1.5);
-  overflow: hidden;
-  cursor: pointer;
-}
-@media (max-width:768px){
-  .heading{
-    font-size: 3rem;
+  img:hover {
+    transform: scale(1.5);
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .madalLayer {
+    width: 96vw;
+    height: 96vh;
+    margin: auto;
+    background-color: rgba($background-primary-dark, 0.7);
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .portoGallery {
+      width: 90%;
+      height: 90%;
+      background-color: rgba($background-primary-light, 0.75);
+      margin: auto;
+    }
+  }
+  @media (max-width: 768px) {
+    .heading {
+      font-size: 3rem;
+    }
+  }
+  @media (max-width: 500px) {
+    .heading {
+      font-size: 2rem;
+    }
+  }
+  @media (max-width: 375px) {
+    .heading {
+      font-size: 1.8rem;
+    }
   }
 }
-@media (max-width:500px){
-  .heading{
-    font-size: 2rem;
-  }
-}
-@media (max-width:375px){
-  .heading{
-    font-size: 1.8rem;
-  }
-}
-}
-
-
-
