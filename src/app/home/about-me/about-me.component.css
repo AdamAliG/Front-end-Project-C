@@ -1,1 +1,21 @@
-/*# sourceMappingURL=about-me.component.css.map */
+.body {
+  background-color: rgb(241, 241, 241);
+}
+
+.text-1 {
+  margin: 10px 20px 10px 20px;
+  font-size: 20px;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  color: #1c1c1c;
+}
+
+.text-2 {
+  margin: 10px 20px 10px 20px;
+  font-size: 20px;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  color: #1c1c1c;
+}/*# sourceMappingURL=about-me.component.css.map */
