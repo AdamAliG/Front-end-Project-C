@@ -11,7 +11,7 @@ export class TestimonialsComponent {
   para1 = " a professional photographer from England living and working in Vienna, Austria. ";
 
   para21 = " Outdoor Photo Session" ;
-  para21image = "./../../../assets/girl-1026246_1280.jpg";
+  para21image = "./../../../assets/girl-1.jpg";
 
   para22 = " Inhouse photo sessions. ";
   para22image = "./../../../assets/photo-session-in-bodysuit-1759810_1280.jpg";

@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"about-me.component.css"}
+{"version":3,"sources":["about-me.component.scss","../../_variables.scss","about-me.component.css"],"names":[],"mappings":"AACA;EACI,oCCKuB;ACL3B;;AFEA;EACI,2BAAA;EACA,eAAA;EACA,qBAAA;EACA,mBAAA;EACA,uBAAA;EACA,cCDc;ACElB;;AFCA;EACI,2BAAA;EACA,eAAA;EACA,qBAAA;EACA,mBAAA;EACA,uBAAA;EACA,cCTc;ACWlB","file":"about-me.component.css"}

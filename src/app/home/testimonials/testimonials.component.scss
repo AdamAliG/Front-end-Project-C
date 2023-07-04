@@ -2,22 +2,23 @@
 
 section {
   background-color: rgba($background-primary-dark, 0.95);
-  .cont {
+  .testCont {
     width: 75%;
     margin: auto;
     padding: 3% 1%;
     text-align: center;
     background-color: rgba($background-primary-dark, 0.5);
+    padding-top: 3%;
+    padding-bottom: 3%;
     h1 {
       font-family: "Raleway", sans-serif;
       font-size: 4rem;
       font-weight: lighter;
       color: $font-color-light;
-      margin-top: 5%;
     }
     .para1 {
       font-family: "Roboto", sans-serif;
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       font-weight: lighter;
       color: $font-color-light;
       padding: 0.7% 8%;
@@ -26,15 +27,16 @@ section {
       border-bottom: 0.1px solid rgba($background-primary-light, 0.4);
     }
     .div1 {
-      margin: auto;
-      padding-top: 1%;
+      margin: 1% auto;
       width: 90%;
+      height: 100%;
       display: grid;
       grid-template-columns: 1fr 2fr 1fr;
-      gap: 2%;
+      gap: 1%;
       div {
         width: 100%;
-        height: 100%;
+        height: 90%;
+        padding: 1% 2%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -81,4 +83,7 @@ section {
       }
     }
   }
+}
+
+@media screen and (max-width: 480px) {
 }
