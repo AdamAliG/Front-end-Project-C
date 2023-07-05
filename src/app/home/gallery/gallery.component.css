@@ -63,6 +63,8 @@ section .madalLayer {
   grid-auto-rows: auto;
   gap: 3%;
   padding: 3%;
+  padding-top: 6%;
+  padding-bottom: 8%;
 }
 section .madalLayer .closeX {
   position: absolute;
@@ -75,6 +77,46 @@ section .madalLayer .closeX button {
   border: none;
   font-size: x-large;
   font-weight: lighter;
+}
+section .madalLayer .portoBtnUp {
+  width: 20%;
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+section .madalLayer .portoBtnUp button {
+  width: 100%;
+  padding: 1% 5%;
+  background-color: rgba(241, 241, 241, 0.95);
+  color: rgba(18, 18, 18, 0.95);
+  border: none;
+  border-radius: 5px;
+  font-size: x-large;
+  font-weight: lighter;
+}
+section .madalLayer .portoBtnUp button i {
+  color: rgba(18, 18, 18, 0.95);
+}
+section .madalLayer .portoBtnDown {
+  width: 20%;
+  position: absolute;
+  bottom: 1%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+section .madalLayer .portoBtnDown button {
+  width: 100%;
+  padding: 1% 5%;
+  background-color: rgba(241, 241, 241, 0.95);
+  color: rgba(18, 18, 18, 0.95);
+  border: none;
+  border-radius: 5px;
+  font-size: x-large;
+  font-weight: lighter;
+}
+section .madalLayer .portoBtnDown button i {
+  color: rgba(18, 18, 18, 0.95);
 }
 section .madalLayer .portoGallery {
   width: 100%;

@@ -54,6 +54,7 @@ section {
     font-weight: 600;
   }
 
+  // Modal Layer For Gallery Categories
   .madalLayer {
     position: absolute;
     width: 96vw;
@@ -68,6 +69,10 @@ section {
     grid-auto-rows: auto;
     gap: 3%;
     padding: 3%;
+    padding-top: 6%;
+    padding-bottom: 8%;
+
+    // Closing Button
     .closeX {
       position: absolute;
       top: 1%;
@@ -80,6 +85,52 @@ section {
         font-weight: lighter;
       }
     }
+
+    // Portofolio Button At Top
+    .portoBtnUp {
+      width: 20%;
+      position: absolute;
+      top: 3%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      button {
+        width: 100%;
+        padding: 1% 5%;
+        background-color: rgba($background-primary-light, 0.95);
+        color: rgba($background-primary-dark, 0.95);
+        border: none;
+        border-radius: 5px;
+        font-size: x-large;
+        font-weight: lighter;
+        i {
+          color: rgba($background-primary-dark, 0.95);
+        }
+      }
+    }
+
+    // Portofolio Button At Bottom
+    .portoBtnDown {
+      width: 20%;
+      position: absolute;
+      bottom: 1%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      button {
+        width: 100%;
+        padding: 1% 5%;
+        background-color: rgba($background-primary-light, 0.95);
+        color: rgba($background-primary-dark, 0.95);
+        border: none;
+        border-radius: 5px;
+        font-size: x-large;
+        font-weight: lighter;
+        i {
+          color: rgba($background-primary-dark, 0.95);
+        }
+      }
+    }
+
+    // Gallery spaces and imges
     .portoGallery {
       width: 100%;
       height: 100%;
