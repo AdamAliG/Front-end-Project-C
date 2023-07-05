@@ -2,7 +2,7 @@ section {
   background-color: rgba(18, 18, 18, 0.95);
 }
 section .testCont {
-  width: 75%;
+  width: 95%;
   margin: auto;
   padding: 3% 1%;
   text-align: center;
@@ -55,6 +55,7 @@ section .testCont .div1 div .titles {
   text-align: left;
   box-shadow: 0px 0px 10px rgba(241, 241, 241, 0.4);
   border-radius: 10px;
+  cursor: pointer;
 }
 section .testCont .div1 div img {
   width: 100%;
@@ -109,5 +110,16 @@ section .testCont .div1 div h2 {
     width: 90%;
     padding: 2% 5%;
     margin-bottom: 3%;
+  }
+}
+@media screen and (max-width: 1068px) {
+  .para1 {
+    margin-bottom: 2rem;
+  }
+  .titles {
+    padding: 2rem;
+  }
+  h2 {
+    margin-top: 2rem;
   }
 }/*# sourceMappingURL=testimonials.component.css.map */
