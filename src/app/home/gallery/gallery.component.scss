@@ -246,6 +246,7 @@ section {
       // Portofolio Button At Top
       .portoBtnUp {
         width: 70%;
+        padding-bottom: 0%;
         button {
           padding: 1% 8%;
           background-color: rgba($background-primary-dark, 0.8);
@@ -289,7 +290,7 @@ section {
 }
 
 
-@media only screen and (min-width: 577px) and (max-width: 768px){
+@media only screen and (min-width: 577px) and (max-width: 767px){
 section {
  
   .respoBtn {
@@ -313,7 +314,7 @@ section {
     width: 100%;
     height: 100%;
     background-color: rgba($background-primary-dark, 0.9);
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr ;
     gap: 1%;
     padding: 0% 3%;
 
@@ -329,7 +330,7 @@ section {
 
     // Portofolio Button At Top
     .portoBtnUp {
-      width: 70%;
+      width: 50%;
       button {
         margin-bottom: 35%;
         padding: 1% 8%;
@@ -343,7 +344,7 @@ section {
 
     // Portofolio Button At Bottom
     .portoBtnDown {
-      width: 70%;
+      width: 50%;
       button {
         align-content: center;
         padding: 1% 8%;
@@ -373,7 +374,95 @@ section {
   }
 }
 }
-@media (min-width:769px){
+@media only screen and (min-width: 768px) and (max-width: 1200px){
+  section {
+   
+    .respoBtn {
+      width: 50%;
+      margin: auto;
+      text-align: center;
+      button {
+        width: 90%;
+        margin: auto;
+        font-size: 0.95rem;
+        text-align: center;
+        i {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  
+    // Modal Layer For Gallery Categories
+    .madalLayer {
+      width: 100%;
+      height: 100%;
+      background-color: rgba($background-primary-dark, 0.9);
+      grid-template-columns: 1fr 1fr ;
+      column-gap: 0%;
+      row-gap: 1%;
+      padding: 0% 3%;
+  
+      // Closing Button
+      .closeX {
+        top: 0.5%;
+        right: 10%;
+        button {
+          color: rgba($background-primary-dark, 0.8);
+          font-weight: bold;
+        }
+      }
+  
+      // Portofolio Button At Top
+      .portoBtnUp {
+        width: 40%;
+        padding-top: 5%;
+
+        button {
+          padding: 1% 8%;
+          background-color: rgba($background-primary-dark, 0.8);
+          color: rgba($background-primary-light, 0.95);
+          i {
+            color: rgba($background-primary-dark, 0.95);
+          }
+        }
+      }
+  
+      // Portofolio Button At Bottom
+      .portoBtnDown {
+        width: 40%;
+        padding-bottom: 2%;
+
+        button {
+          align-content: center;
+          padding: 1% 8%;
+          background-color: rgba($background-primary-dark, 0.8);
+          color: rgba($background-primary-light, 0.95);
+          i {
+            color: rgba($background-primary-dark, 0.95);
+          }
+        }
+      }
+  
+      // Gallery spaces and imges
+      .portoGallery {
+        width: 100%;
+        height: 100%;
+        padding: 5%;
+        background-color: rgba($background-primary-light, 0.75);
+        border-radius: 3px;
+        margin: auto;
+        .portoImg {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          border-radius: 3px;
+        }
+      }
+    }
+  }
+  }
+@media (min-width:1201px){
   section {
  
     .respoBtn {
@@ -397,7 +486,7 @@ section {
       width: 100%;
       height: 100%;
       background-color: rgba($background-primary-dark, 0.9);
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
       column-gap: 0%;
       row-gap: 1%;
       padding: 0% 3%;
@@ -414,7 +503,9 @@ section {
   
       // Portofolio Button At Top
       .portoBtnUp {
-        width: 70%;
+        width: 30%;
+        padding-top: 10%;
+
         button {
           padding: 1% 8%;
           background-color: rgba($background-primary-dark, 0.8);
@@ -427,7 +518,8 @@ section {
   
       // Portofolio Button At Bottom
       .portoBtnDown {
-        width: 70%;
+        width: 30%;
+        padding-bottom: 2.5%;
         button {
           padding: 1% 8%;
           background-color: rgba($background-primary-dark, 0.8);
