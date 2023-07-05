@@ -159,26 +159,26 @@ section {
     }
   }
 
-  .madalOverLayer {
-    position: absolute;
-    width: 85vw;
-    height: 100vh;
-    background-color: rgba($background-primary-light, 0.95);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 6;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    img {
-      height: 95%;
-      object-fit: contain;
-      border: 25px solid rgba($background-primary-dark, 0.9);
-      border-radius: 3px;
-    }
-  }
+  // .madalOverLayer {
+  //   position: absolute;
+  //   width: 85vw;
+  //   height: 100vh;
+  //   background-color: rgba($background-primary-light, 0.95);
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+  //   z-index: 6;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   border-radius: 10px;
+  //   img {
+  //     height: 95%;
+  //     object-fit: contain;
+  //     border: 25px solid rgba($background-primary-dark, 0.9);
+  //     border-radius: 3px;
+  //   }
+  // }
 
   @media (max-width: 768px) {
     .heading {
@@ -244,7 +244,7 @@ section {
       }
     }
   }
-  @media (max-width: 500px) {
+  @media (min-width: 376) and (max-width: 500px) {
     .heading {
       font-size: 2rem;
     }

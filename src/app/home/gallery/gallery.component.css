@@ -143,27 +143,6 @@ section .madalLayer .portoGallery .portoImg {
      object-fit: contain;
   border-radius: 3px;
 }
-section .madalOverLayer {
-  position: absolute;
-  width: 85vw;
-  height: 100vh;
-  background-color: rgba(241, 241, 241, 0.95);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 6;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-}
-section .madalOverLayer img {
-  height: 95%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  border: 25px solid rgba(18, 18, 18, 0.9);
-  border-radius: 3px;
-}
 @media (max-width: 768px) {
   section .heading {
     font-size: 3rem;
@@ -219,7 +198,7 @@ section .madalOverLayer img {
     border-radius: 3px;
   }
 }
-@media (max-width: 500px) {
+@media (min-width: 376) and (max-width: 500px) {
   section .heading {
     font-size: 2rem;
   }
