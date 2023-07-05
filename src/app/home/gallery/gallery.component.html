@@ -74,7 +74,6 @@
   <ng-container *ngIf="selectedCategory === 'wedding'">
       <div class="portoGallery" *ngFor="let pic of wedding; let i = index">
           <img class="portoImg" src="{{pic}}" alt="" type="button" (click)="openImage()">
-          <span> the image name is {{wedding[i]}} </span>
       </div>
   </ng-container>
   <ng-container *ngIf="selectedCategory === 'vacation'">
