@@ -8,9 +8,7 @@ section {
   position: relative;
 }
 section .heading {
-  font-family: "raleway", sans-serif;
-  font-size: 5rem;
-  font-weight: lighter;
+  font-family: "raleways", sans-serif;
   color: rgb(18, 18, 18);
   text-align: center;
 }

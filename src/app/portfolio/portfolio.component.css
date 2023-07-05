@@ -1,1 +1,9 @@
-/*# sourceMappingURL=portfolio.component.css.map */
+section {
+  width: 95%;
+  height: 80vh;
+  margin: 3% auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(18, 18, 18, 0.95);
+}/*# sourceMappingURL=portfolio.component.css.map */

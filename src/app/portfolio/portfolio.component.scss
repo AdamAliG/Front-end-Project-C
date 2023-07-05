@@ -1,0 +1,11 @@
+@import "../variables";
+
+section {
+  width: 95%;
+  height: 80vh;
+  margin: 3% auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba($background-primary-dark, 0.95);
+}
