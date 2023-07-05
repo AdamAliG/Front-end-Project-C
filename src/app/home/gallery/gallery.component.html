@@ -62,9 +62,15 @@
 </div>
 
 
-
+<!-- Modal | Gallery Categories -->
 <div class="madalLayer" [style.display]="showModal ? 'grid' : 'none'" id="modal" (click)="toggleModal(null)">
+  <!-- Close Button -->
   <div class="closeX"> <button>X</button></div>
+  <!-- Portofolio Link at Top of the Modal -->
+  <div class="portoBtnUp"> <button routerLink="/portfolio"> Go to Protofolio <i class="fa-solid fa-chevrons-right"></i> </button> </div>
+    <!-- Portofolio Link at Bottom of the Modal -->
+  <div class="portoBtnDown"> <button routerLink="/portfolio"> Go to Protofolio <i class="fa-solid fa-chevrons-right"></i> </button> </div>
+
   <ng-container *ngIf="selectedCategory === 'wedding'">
       <div class="portoGallery" *ngFor="let pic of wedding; let i = index">
           <img class="portoImg" src="{{pic}}" alt="" type="button" (click)="openImage()">
