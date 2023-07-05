@@ -8,8 +8,27 @@ section {
   align-items: center;
   justify-content: center;
   background-color: rgba($background-primary-dark, 0.95);
+  .carousel-item{
+    padding: 3rem;
+  }
 }
-img{
-  height: 95%;
-  width: 95%;
+@media screen and (width < 992px){
+  section {
+    h1{
+      margin-top: 	1rem;
+    }
+    .carousel-item{
+      padding: 		1rem;
+    }
+  }
+}
+@media screen and (width < 350px){
+  section {
+    h1{
+      margin-top: 0.25rem;
+    }
+    .carousel-item{
+      padding: 	0.25rem;
+    }
+  }
 }
