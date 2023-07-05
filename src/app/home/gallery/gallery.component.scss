@@ -8,10 +8,19 @@ section {
   background-color: $background-primary-light;
   position: relative;
   .heading {
-    font-family: "raleways", sans-serif;
+    font-family: "raleway", sans-serif;
     color: $background-primary-dark;
     text-align: center;
   }
+
+  .picture-event{
+    cursor: pointer;
+    transition: all .5s;
+    &:hover{
+      color: $font-color-light;
+    }
+  }
+
   div {
     .images {
       position: relative;
@@ -41,6 +50,9 @@ section {
       background-color: rgba(255, 255, 255, 0.5);
       padding: 10px;
       display: inline-block;
+      &:hover{
+        background-color: rgba($background-primary-dark, 0.7);
+      }
     }
   }
 
