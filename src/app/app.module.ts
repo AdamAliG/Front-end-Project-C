@@ -21,7 +21,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
     HeroComponent,
     TestimonialsComponent,
     NavbarComponent,
-    AboutMeComponent
+    AboutMeComponent,
   ],
   imports: [
     BrowserModule,

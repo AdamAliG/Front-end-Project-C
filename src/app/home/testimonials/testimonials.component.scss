@@ -53,6 +53,7 @@ section {
           text-align: left;
           box-shadow: 0px 0px 10px rgba($background-primary-light, 0.4);
           border-radius: 10px;
+          cursor: pointer;
         }
         img {
           width: 100%;
@@ -114,15 +115,15 @@ section {
   }
 }
 
-@media screen and (max-width:1068px){
-  .para1{
+@media screen and (max-width: 1068px) {
+  .para1 {
     margin-bottom: 2rem;
   }
-  .titles{
+  .titles {
     padding: 2rem;
   }
 
-  h2{
+  h2 {
     margin-top: 2rem;
   }
 }
