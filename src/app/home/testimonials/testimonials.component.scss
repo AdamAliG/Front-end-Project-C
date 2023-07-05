@@ -113,3 +113,16 @@ section {
     }
   }
 }
+
+@media screen and (max-width:1068px){
+  .para1{
+    margin-bottom: 2rem;
+  }
+  .titles{
+    padding: 2rem;
+  }
+
+  h2{
+    margin-top: 2rem;
+  }
+}
