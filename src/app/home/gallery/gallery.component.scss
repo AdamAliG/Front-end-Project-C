@@ -14,6 +14,18 @@ section {
     text-align: center;
   }
 
+  .respoBtn {
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    button {
+      width: 60%;
+      margin: auto;
+      font-size: 0.95rem;
+      text-align: center;
+    }
+  }
+
   .picture-event {
     cursor: pointer;
     transition: all 0.5s;
@@ -96,6 +108,7 @@ section {
         border: none;
         font-size: x-large;
         font-weight: lighter;
+      
       }
     }
 
