@@ -1,4 +1,6 @@
 @import "../../variables";
+
+
 * {
   padding: 0;
   box-sizing: border-box;
@@ -180,33 +182,86 @@ section {
   //   }
   // }
 
-  @media (max-width: 768px) {
+  @media (min-width: 577px) and (max-width: 768px) {
     .heading {
       font-size: 3rem;
+    }
+  }
+}
+@media only screen and (min-width: 376px) and (max-width: 576px) {
+
+  section {
+    width: 95%;
+    margin: auto;
+    .heading {
+      text-align: center;
+      font-size: 2.5rem;
+    }
+    .respoBtn {
+      width: 50%;
+      margin: auto;
+      text-align: center;
+      button {
+        width: 90%;
+        margin: auto;
+        font-size: 0.95rem;
+        text-align: center;
+        i {
+          width: 100%;
+          text-align: center;
+
+        }
+      }
     }
 
     // Modal Layer For Gallery Categories
     .madalLayer {
-      height: 100%;
-      grid-template-columns: 1fr;
+      position: absolute;
+      width: 96vw;
+      background-color: rgba($background-primary-dark, 0.7);
+      border-radius: 3px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 5;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-auto-rows: auto;
+      gap: 3%;
+      padding: 3%;
+      padding-top: 6%;
+      padding-bottom: 8%;
 
       // Closing Button
       .closeX {
-        right: 8%;
+        position: absolute;
+        top: 1%;
+        right: 1%;
         button {
-          color: rgba($background-primary-dark, 0.95);
-          font-weight: bolder;
+          background-color: transparent;
+          color: rgba($background-primary-light, 0.95);
+          border: none;
+          font-size: x-large;
+          font-weight: lighter;
         }
       }
 
       // Portofolio Button At Top
       .portoBtnUp {
-        width: 70%;
+        width: 20%;
+        position: absolute;
+        top: 3%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         button {
           width: 100%;
-          padding: 1% 12%;
-          background-color: rgba($background-primary-dark, 0.85);
-          color: rgba($background-primary-light, 0.95);
+          padding: 1% 5%;
+          background-color: rgba($background-primary-light, 0.95);
+          color: rgba($background-primary-dark, 0.95);
+          border: none;
+          border-radius: 5px;
+          font-size: x-large;
+          font-weight: lighter;
           i {
             color: rgba($background-primary-dark, 0.95);
           }
@@ -215,12 +270,20 @@ section {
 
       // Portofolio Button At Bottom
       .portoBtnDown {
-        width: 70%;
+        width: 20%;
+        position: absolute;
+        bottom: 1%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         button {
           width: 100%;
-          padding: 1% 12%;
-          background-color: rgba($background-primary-dark, 0.85);
-          color: rgba($background-primary-light, 0.95);
+          padding: 1% 5%;
+          background-color: rgba($background-primary-light, 0.95);
+          color: rgba($background-primary-dark, 0.95);
+          border: none;
+          border-radius: 5px;
+          font-size: x-large;
+          font-weight: lighter;
           i {
             color: rgba($background-primary-dark, 0.95);
           }
@@ -243,15 +306,7 @@ section {
         }
       }
     }
-  }
-  @media (min-width: 376) and (max-width: 500px) {
-    .heading {
-      font-size: 2rem;
-    }
-  }
-  @media (max-width: 375px) {
-    .heading {
-      font-size: 1.8rem;
-    }
-  }
+
+}
+
 }
